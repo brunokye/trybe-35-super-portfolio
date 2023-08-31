@@ -21,4 +21,13 @@
       </li>
     {% endfor %}
   </ul>
+
+  <ul>
+    {% for certificate in certificates %}
+      <li>
+        {{ certificate.name }}
+        {{ certificate.certifying_institution }}
+      </li>
+    {% endfor %}
+  </ul>
 {% endblock %}
